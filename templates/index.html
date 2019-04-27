@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+    
+{% block body %}
+        Hello today is {{day}}&#128540;
+        <form action = "{{url_for('hello')}}" method="post">
+            <input type="text" name="name" placeholder="Name" value="">
+            <button>Submit</button>
+        </form>
+{% endblock %}
